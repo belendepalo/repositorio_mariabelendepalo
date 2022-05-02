@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+a{ 
+    text-decoration: none; 
+} 
+
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+.header__logo{
+    padding: 20px 30px;
+    font-size: 25px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: none;
+    text-transform: uppercase;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363434;
+    width: 100%;
+    height: 80px;
+}
+.header__list{
+    display: flex;
+    list-style: none;
+}
+
+.header__a{
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: none;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+
+/* MAIN */
+
+main{
+    padding: 20px 20px 20px 20px;
+    background-color: black;
+}
+
+.main__div{
+    display:flex;
+    align-items: center;
+}
+
+.main__div--container{
+    text-align: left;
+    margin: 40px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;  
+}
+.main__title{
+    font-size: 65px;
+}
+
+.main__text{
+    font-size: 28px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #363434;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.footer__list{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+.footer__twitter{
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+
+.footer__instagram{
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+
+/* ---------------------------GALERIA */
+
+.gallery__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img__2, .img__3, .img__4, .img__5, .img__7, .img__9, .img__10, .img__11{
+    grid-row-start: span 2;
+}
+
+.video__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 15px;
+}
+
+.video__item{
+    padding: 20px; 
+    width: 80%;
+    height: auto;
+}
+
+/* ----------------------RESPONSIVE LA GALERIA Y EL INDEX */
+/* MOBILE */
+@media only screen and (max-width:450px){
+    
+    /* galeria */
+    .gallery__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        gap: 40px;
+        padding: 25px;
+    }
+    .video__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+   
+
+    /* index */
+    .header__list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+    }
+    .main__image{
+        display: none;
+    }
+
+    /* informacion */
+    .main__img{
+        width: 90%;
+        height: auto;
+        padding: 20px;  
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width:451px) and (max-width:750px) {
+     /* galeria */
+    .gallery__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px;
+    }
+    .video__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 75%;
+        height: auto;
+    }
+
+
+    /* index */
+    .header__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+    }
+}
+
+/* INFORMACION */
+.main__subtitle{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.main__container{
+    font-size: 20px;
+}
+.main__content3{
+    padding: 20px;
+}
+
+
+
+
