@@ -210,6 +210,18 @@ footer{
     padding: 20px;
 }
 
+/* transformaciones y animaciones */
+.word__transformation:hover{
+    transform: scale(1.3);
+    animation: changeColor 10s;
+}
+
+@keyframes changeColor {
+    0%{
+        background-color: rgb(31, 31, 31);
+    }
+}
+
 
 
 
